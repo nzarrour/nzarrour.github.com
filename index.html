@@ -16,9 +16,15 @@
             text-decoration: none;
             color: #8dc63f;
         }
+        a.normal {
+            color: inherit;
+        }
+        a:hover {
+            color: #000;
+        }
         #header {
             background: #f0f0f0;
-            padding: 100px 0 5px;
+            padding: 50px 0 5px;
             margin-bottom: 20px;
         }
         h1, h1 sub {
@@ -92,6 +98,7 @@
             border-bottom: 1px solid #8dc63f;
             font-size: 12px;
             text-transform: uppercase;
+            clear: both;
         }
         .right h3 span {
             padding-bottom: 5px;
@@ -106,11 +113,23 @@
             width: 300px;
             font-size: 14px;
         }
+        .right ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
         #resume {
             margin-left: 60px;
         }
-        #resume p {
+        #resume ul {
             font-size: 14px;
+            list-style: none;
+            margin-left: 0;
+            text-indent: -1em;
+            padding-left: 1.5em;
+        }
+        #resume ul li:before {
+            content: "+ ";
         }
         .current {
             font-size: 1.6em;
@@ -153,6 +172,25 @@
                     border-radius: 5px;
             -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
         }
+        #instagram {
+            list-style: none;
+            height: 145px;
+        }
+        #instagram li {
+            display: block;
+            float: left;
+            width: 71px;
+            height: 71px;
+            background: #8dc63f;
+            margin: 2px;
+        }
+        #decoration {
+            display: block;
+            width: 120px;
+            height: 154px;
+            background: url(decoration.png) top left no-repeat;
+            margin: 75px auto 0;
+        }
     </style>
 </head>
 <body>
@@ -160,7 +198,7 @@
         <h1>Nayef Zarrour, CPA <sub>Not your dad's bean counter</sub></h1>
         <ul id="navigation">
             <li><span class="selected">Résumé</span></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="http://nayefzarrour.wordpress.com/">Blog</a></li>
             <li><a href="mailto:nzarrour@gmail.com">Contact</a></li>
         </ul>
     </div>
@@ -169,23 +207,29 @@
             <p><b>Thanks for visiting my professional site.</b> The job market is competitive.  Swing a stick and you’re bound to hit a CPA. So what else do I bring to the table?</p>
             <p>I’m an entrepreneur, a philanthropist, a go-getter, a thinker, a believer, an extrovert, a traveller, and most importantly a learner. My business career began at an early age through local family-owned businesses that, due to their small size, gave me the opportunity to tackle new and exciting challenges at every level. Insuring growth and profitability in our businesses meant building long-term, durable relationships with clients and suppliers of all walks of life – something that I’m proud to say has crafted me into the people-person I am today.</p>
             <p>After a few years in public accounting as a staff accountant – or as I like to call it, a “Jack-of-All-Trades” – and conquering the CPA exam, I co-founded Azork – a technology start-up specializing in cloud-based software.  Like my previous roles in small business and public accounting, Azork gave me the opporunity to lead multiple roles including raising private investment, managing investor relations, establishing multiple equity valuations, reviewing and negotiating contracts, business development, researching, and managing daily operations.</p>
-            <p>Whether it’s professional or personal, business development or triathlon training, I take pride in all that I do. My broad experience has taught me that true leadership embodies articulate communication, precise organization (pocket protector not included), establishing goals and strategies to achieve those goals, accountability, and integrity. I invite you to see my leadership experience and résumé by <a href="#">clicking here</a>. <a href="mailto:nzarrour@gmail.com">Emails</a> and <a href="tel:+13305186838">phone calls</a> are always appreciated too! I look forward to chatting.</p>
+            <p>Whether it’s professional or personal, business development or triathlon training, I take pride in all that I do. My broad experience has taught me that true leadership embodies articulate communication, precise organization (pocket protector not included), establishing goals and strategies to achieve those goals, accountability, and integrity. I invite you to see my leadership experience and résumé by <a href="http://cloud.github.com/downloads/nzarrour/nzarrour.github.com/resume.pdf">clicking here</a>. <a href="mailto:nzarrour@gmail.com">Emails</a> and <a href="tel:+13305186838">phone calls</a> are always appreciated too! I look forward to chatting.</p>
             <p>Cheers,<br />Nayef</p>
             <h3><span>Condensed Résumé</span></h3>
             <div id="resume">
                 <div class="job current">
                     <h4>Azork, Ltd. <span>&mdash; Boardman, OH</span></h4>
-                    <h5 class="round">May 2009 &ndash; December 2012</h5>
-                    <p>Co-Founder, Chief Financial Officer, Chief Operating Officer
-Azork is a technology start-up that created a cloud-based private, secure communications and productivity platform directed towards businesses, non-profits, K-12 schools, and high-speed broadband subscribers.</p>
+                    <h5 class="round">Co-Founder, Chief Operating Officer, Chief Financial Officer</h5>
+                    <ul>
+                        <li>Established and grew team from 2 founders to 12 engineers and designers</li>
+                        <li>In charge of all daily operations, finances, and reporting</li>
+                        <li>Developed investment vehicles and led private capital fundraising rounds</li>
+                        <li>Established price of Azork's privately traded securities through custom financial projection model</li>
+                    </ul>
                 </div>
                 <div class="job">
-                    <h4>Azork Ltd <span>&mdash; Boardman, OH</span></h4>
-                    <h5 class="round">May 2009 &ndash; December 2012</h5>
-                    <p>Co-Founder, Chief Financial Officer, Chief Operating Officer
-Azork is a technology start-up that created a cloud-based private, secure communications and productivity platform directed towards businesses, non-profits, K-12 schools, and high-speed broadband subscribers.</p>
+                    <h4>YDEK Productions, LLC <span>&mdash; Boardman, OH</span></h4>
+                    <h5 class="round">Partner, Chief Financial Officer</h5>
+                    <ul>
+                        <li>Developed controllership practices and prepared monthly GAAP financials</li>
+                        <li>Established and implemented company cash flow management practices</li>
+                    </ul>
                 </div>
-                <a id="full" class="round" href="#">Click here to see my full resume</a>
+                <a id="full" class="round" href="http://cloud.github.com/downloads/nzarrour/nzarrour.github.com/resume.pdf">Click here to see my full resume</a>
             </div>
             <div id="footer">
                 &copy; 2012 Nayef Zarrour
@@ -198,10 +242,41 @@ Azork is a technology start-up that created a cloud-based private, secure commun
                 <li>Mobile: (USA) <a href="tel:+13305186838">1.330.518.6838</a></li>
             </ul>
             <h3><span>Think With Me</span></h3>
+            <p id="wp-loading"><i>Loading posts...</i></p>
             <h3><span>See With Me</span></h3>
+            <p id="insta-loading"><i>Loading images...</i></p>
             <h3><span>Connect With Me</span></h3>
+            <ul>
+                <li><a href="http://www.linkedin.com/in/nayefzarrour" class="normal">LinkedIn</a></li>
+                <li><a href="http://nayefzarrour.wordpress.com/" class="normal">Blog</a></li>
+                <li><a href="https://www.facebook.com/nayefzarrour" class="normal">Facebook</a></li>
+                <li><a href="https://twitter.com/nayefzarrour" class="normal">Twitter</a></li>
+            </ul>
+            <div id="decoration"></div>
         </div>
         <div style="clear:both;"></div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $.getJSON('http://public-api.wordpress.com/rest/v1/sites/nayefzarrour.wordpress.com/posts/?posts=3&callback=?', function(data) {
+            var posts = [], i=0;
+            for(; i<data.found; i++) {
+                var post = '<li><a href="'+data.posts[i].short_URL+'" class="normal">'+data.posts[i].title+'</a></li>';
+                posts.push(post);
+            }
+            $('#wp-loading').replaceWith('<ul>'+(posts.join(''))+'</ul>');
+        });
+
+        $.getJSON('https://api.instagram.com/v1/users/self/media/recent?access_token=4816497.e0f10bb.328df3a8c48d40229c3ce0d4cc5c3020&count=8&callback=?', function(data) {
+            var images = [], i=0, j=data.data.length;
+            for(; i<j; i++) {
+                var image = '<li><a href="'+data.data[i].link+'"><img src="'+data.data[i].images.thumbnail.url+'" width="71" height="71" alt="'+data.data[i].caption.text+'" /></a></li>';
+                images.push(image);
+            }
+            $('#insta-loading').replaceWith('<ul id="instagram">'+(images.join(''))+'</ul>');
+        });
+    });
+    </script>
 </body>
 </html>
